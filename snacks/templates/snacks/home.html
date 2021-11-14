@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+<div class="home">
+  <h1>Most Popular Snacks In The US</h1>
+  <p>
+    Take a trip to the grocery store, and you'll immediately come to the realization that supermarket shelves are saturated in an absurd number of different snacks. But what to choose? Among such a vast amount of selections are the snacks that people continue to purchase time after time until they become go-to classics. These are the beloved treats we decided to showcase—from M&Ms to Lay's potato chips, these snacks probably represent at least one of your favorite foods.
+  </p>
+  <p>
+    Here is a list of the top 6 most favorite snacks in the US.
+  </p>
+  <div>
+    {% for snack in snacks.values %}
+    <section class="general">
+      <div class="pic-name">
+        <div class="pic" style="background-image: url('{{snack.img}}')"></div>
+        <h3>{{snack.name}}</h3>
+      </div>
+
+      <blockquote><i>"{{snack.about}}"</i></blockquote>
+    </section>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
