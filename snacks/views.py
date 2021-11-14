@@ -35,7 +35,7 @@ def home(request):
         }
         
     }
-    return render(request, 'snacks/home.html', content = {"snacks":snacks})
+    return render(request, 'snacks/home.html', context = {"snacks":snacks})
 
 def about(request):
     return render(request, 'snacks/about.html')

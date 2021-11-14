@@ -16,11 +16,12 @@ a {
     width: inherit;
 }
 .nav-logo {
-    width: 50px;
-    height: 50px;
-    background-image: url("https://cdn2.steamgriddb.com/file/sgdb-cdn/icon/b89c30965ebc74912de879f22da62dbf.ico");
+    width: 47px;
+    height: 49px;
+    background-image: url("https://www.seekpng.com/png/detail/667-6676806_yum-png.png");
     background-size: contain;
     margin-left: 2rem ;
+    border-radius: 50%;
 }
 .nav-links {
     margin-right: 2rem;
