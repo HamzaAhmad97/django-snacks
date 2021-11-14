@@ -6,3 +6,8 @@ class TestSnacks(TestCase):
         url = reverse("home")
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
+
+    def test_about_status_code(self):
+        url = reverse("about")
+        response = self.client.get(url)
+        self.assertEqual(response.status_code, 200)
