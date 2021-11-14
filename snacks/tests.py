@@ -11,3 +11,7 @@ class TestSnacks(TestCase):
         url = reverse("about")
         response = self.client.get(url)
         self.assertEqual(response.status_code, 200)
+
+    def test_home_view_uses_correct_template(self):
+        response = self.client.get(reverse('home'))
+        self.assertTemplateUsed(response, 'snacks/home.html')
