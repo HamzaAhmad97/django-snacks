@@ -15,3 +15,7 @@ class TestSnacks(TestCase):
     def test_home_view_uses_correct_template(self):
         response = self.client.get(reverse('home'))
         self.assertTemplateUsed(response, 'snacks/home.html')
+
+    def test_about_view_uses_correct_template(self):
+        response = self.client.get(reverse('about'))
+        self.assertTemplateUsed(response, 'snacks/about.html')
